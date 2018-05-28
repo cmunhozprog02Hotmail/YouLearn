@@ -1,9 +1,9 @@
-﻿using System;
+﻿using YouLearn.Domain.Entities.Base;
 using YouLearn.Domain.Enums;
 
 namespace YouLearn.Domain.Entities
 {
-    public class Video
+    public class Video : EntityBase
     {
        
         public string Titulo { get; set; }
@@ -13,8 +13,6 @@ namespace YouLearn.Domain.Entities
         public string IdVideoToutube { get; set; }
 
         public EnumStatus Status { get; set; }
-
-        public Guid Id { get; set; }
 
         public Canal Canal { get; set; }
 

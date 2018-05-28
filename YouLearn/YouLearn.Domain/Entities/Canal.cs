@@ -1,11 +1,10 @@
-﻿using System;
+﻿using YouLearn.Domain.Entities.Base;
 
 namespace YouLearn.Domain.Entities
 {
-    public class Canal
+    public class Canal : EntityBase
     {
-        public Guid Id { get; set; }
-
+       
         public string Nome { get; set; }
 
         public string UlrLogo { get; set; }
