@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using YouLearn.Domain.Enums;
 
 namespace YouLearn.Domain.Entities
 {
@@ -12,6 +11,6 @@ namespace YouLearn.Domain.Entities
 
         // Em Analise, Aprovado ou Recusado
 
-        public string Status { get; set; }
+        public EnumStatus Status { get; set; }
     }
 }
