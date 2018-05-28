@@ -9,7 +9,7 @@ namespace YouLearn.Domain.Entities
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public string Tags { get; set; }
-        public int TiOrdemNaPlayList { get; set; }
+        public int OrdemNaPlayList { get; set; }
         public string IdVideoToutube { get; set; }
 
         public EnumStatus Status { get; set; }
