@@ -23,13 +23,9 @@ namespace YouLearn.Domain.Services
             //Cria entitade
 
             Nome nome = new Nome(request.PrimeiroNome, request.UltimoNome);
-            //nome.PrimeiroNome = ;
-            //nome.UltimoNome = ;
-
-            Email email = new Email(request.Email);
-            //email.Endereco = ;
-
             
+            Email email = new Email(request.Email);
+                        
 
             Usuario usuario = new Usuario();
             usuario.Nome = nome;
