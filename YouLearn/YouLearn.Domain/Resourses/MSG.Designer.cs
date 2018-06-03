@@ -22,7 +22,7 @@ namespace YouLearn.Domain.Resourses {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MSG {
+    public class MSG {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace YouLearn.Domain.Resourses {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("YouLearn.Domain.Resourses.MSG", typeof(MSG).Assembly);
@@ -51,7 +51,7 @@ namespace YouLearn.Domain.Resourses {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace YouLearn.Domain.Resourses {
         /// <summary>
         ///   Looks up a localized string similar to Objeto {0} é obrigatório.
         /// </summary>
-        internal static string OBJETO_X0_E_OBRIGATORIO {
+        public static string OBJETO_X0_E_OBRIGATORIO {
             get {
                 return ResourceManager.GetString("OBJETO_X0_E_OBRIGATORIO", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace YouLearn.Domain.Resourses {
         /// <summary>
         ///   Looks up a localized string similar to O Campo {0} é obrigatorio e deve conter entre {1} e {2} caracteres}.
         /// </summary>
-        internal static string X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES {
+        public static string X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES {
             get {
                 return ResourceManager.GetString("X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES", resourceCulture);
             }

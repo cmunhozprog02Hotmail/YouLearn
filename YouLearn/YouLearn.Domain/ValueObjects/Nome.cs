@@ -16,7 +16,7 @@ namespace YouLearn.Domain.ValueObjects
                 .IfNullOrInvalidLength(x => x.UltimoNome, 1, 50, MSG.X0_OBRIGATORIO_E_DEVE_CONTER_ENTRE_X1_E_X2_CARACTERES.ToFormat(primeiroNome));
         }
 
-        public string PrimeiroNome { get; private set; }
-        public string UltimoNome { get; private set; }
+        public string PrimeiroNome { get; set; }
+        public string UltimoNome { get; set; }
     }
 }

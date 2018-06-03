@@ -8,7 +8,7 @@ namespace YouLearn.Domain.ValueObjects
         {
             Endereco = endereco;
 
-            new AddNotifications<Email>(this)
+            new AddNotifications<Email>(this);
             
             
         }

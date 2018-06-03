@@ -1,12 +1,8 @@
 ﻿using prmToolkit.NotificationPattern;
-using prmToolkit.NotificationPattern.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using YouLearn.Domain.Arguments.Usuario;
 using YouLearn.Domain.Entities;
 using YouLearn.Domain.Interfaces.Services;
-using YouLearn.Domain.Resourses;
 
 namespace YouLearn.Domain.Services
 {
@@ -16,16 +12,23 @@ namespace YouLearn.Domain.Services
         {
             if(request == null)
             {
-                AddNotification("AdicionarUsuarioRequest", MSG.OBJETO_X0_E_OBRIGATORIO.ToFormat("AdicionarUsuarioRequest"));
+                AddNotification("AdicionarUsuarioRequest", "Objeto AdicionarUsuarioRequest é obrigatório.");
                 return null;
             }
 
-            // Cria Entidade
             Usuario usuario = new Usuario();
-            usuario.Nome.PrimeiroNome = request.PrimeiroNome;
-            usuario.Nome.UltimoNome = request.UltimoNome;
-            usuario.Email.Endereco = request.Email;
-            usuario.Senha = request.Senha;
+            usuario.Nome.PrimeiroNome = "Paulo Rogèrio";
+            usuario.Nome.UltimoNome = "Martins Marques";
+            usuario.Email.Endereco = "paulo.analista@outlook.com";
+            usuario.Senha = "123456";
+
+            //Persiste no Banco de Dados
+            AdicionarUsuarioResponse response = new RepositoryUsuario(usuario);
+            return response;
+
+
+
+            
         }
 
         public AutenticarUsuarioResponse AutenticarUsuario(AutenticarUsuarioRequest request)

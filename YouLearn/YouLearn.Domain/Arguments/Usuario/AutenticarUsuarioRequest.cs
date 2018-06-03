@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace YouLearn.Domain.Arguments.Usuario
+﻿namespace YouLearn.Domain.Arguments.Usuario
 {
     public class AutenticarUsuarioRequest
     {
