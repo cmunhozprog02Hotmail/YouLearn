@@ -22,19 +22,36 @@ namespace YouLearn.Domain.Services
 
             //Cria entitade
 
-            Nome nome = new Nome();
-            nome.PrimeiroNome = request.PrimeiroNome;
-            nome.UltimoNome = request.UltimoNome;
+            Nome nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+            //nome.PrimeiroNome = ;
+            //nome.UltimoNome = ;
+
+            Email email = new Email(request.Email);
+            //email.Endereco = ;
+
+            
 
             Usuario usuario = new Usuario();
             usuario.Nome = nome;
-            usuario.Nome.UltimoNome = request.UltimoNome;
-            usuario.Email.Endereco = request.Email;
+            usuario.Email = email;
             usuario.Senha = request.Senha;
 
+            AddNotifications(nome, email, usuario);
+
+            if (usuario.Senha.Length < 3)
+            {
+                throw new Exception("Senha deve conter no mínimo 3 caracteres");
+            }
+
             //Persiste no Banco de Dados
-            AdicionarUsuarioResponse response = new RepositoryUsuario(usuario);
-            return response;
+            //AdicionarUsuarioResponse response = new RepositoryUsuario(usuario);
+            //return response;
+
+            if(this.IsInvalid() == true)
+            {
+                return null;
+            }
+            return new AdicionarUsuarioResponse(Guid.NewGuid());
 
 
 

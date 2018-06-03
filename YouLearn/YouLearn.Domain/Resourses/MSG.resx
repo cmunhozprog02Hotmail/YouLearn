@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="OBJETO_X0_E_INVALIDO" xml:space="preserve">
+    <value>O Campo {0} é inválido.</value>
+  </data>
   <data name="OBJETO_X0_E_OBRIGATORIO" xml:space="preserve">
     <value>Objeto {0} é obrigatório</value>
   </data>

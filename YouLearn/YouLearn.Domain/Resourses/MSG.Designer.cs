@@ -61,6 +61,15 @@ namespace YouLearn.Domain.Resourses {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O Campo {0} é inválido..
+        /// </summary>
+        public static string OBJETO_X0_E_INVALIDO {
+            get {
+                return ResourceManager.GetString("OBJETO_X0_E_INVALIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Objeto {0} é obrigatório.
         /// </summary>
         public static string OBJETO_X0_E_OBRIGATORIO {

@@ -1,9 +1,10 @@
-﻿using YouLearn.Domain.Entities.Base;
+﻿using prmToolkit.NotificationPattern;
+using YouLearn.Domain.Entities.Base;
 using YouLearn.Domain.ValueObjects;
 
 namespace YouLearn.Domain.Entities
 {
-    public class Usuario : EntityBase
+    public class Usuario : Notifiable
     {
         
         public Nome Nome { get; set; }
