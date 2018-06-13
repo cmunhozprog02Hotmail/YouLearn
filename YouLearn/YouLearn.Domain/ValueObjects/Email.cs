@@ -11,11 +11,8 @@ namespace YouLearn.Domain.ValueObjects
         {
             Endereco = endereco;
 
-
             new AddNotifications<Email>(this)
                 .IfNotEmail(x => x.Endereco, MSG.OBJETO_X0_E_INVALIDO.ToFormat("E-Mail"));
-            
-            
         }
 
         public string Endereco { get; private set; }

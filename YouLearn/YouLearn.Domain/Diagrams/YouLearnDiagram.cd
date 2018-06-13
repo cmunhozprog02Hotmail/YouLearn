@@ -30,13 +30,6 @@
       <Property Name="Usuario" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="YouLearn.Domain.Entities.Usuario">
-    <Position X="4.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Entities\Usuario.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="YouLearn.Domain.Entities.Video">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -46,6 +39,13 @@
     <ShowAsAssociation>
       <Property Name="UsuarioSurgiu" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="YouLearn.Domain.Entities.Usuario">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entities\Usuario.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

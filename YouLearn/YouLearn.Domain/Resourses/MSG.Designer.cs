@@ -61,6 +61,15 @@ namespace YouLearn.Domain.Resourses {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} não encontrado.
+        /// </summary>
+        public static string DADOS_NAO_ENCONTRADOS {
+            get {
+                return ResourceManager.GetString("DADOS_NAO_ENCONTRADOS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O Campo {0} é inválido..
         /// </summary>
         public static string OBJETO_X0_E_INVALIDO {
